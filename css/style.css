@@ -261,12 +261,14 @@ ol, ul {
 	color: #fff;
 }
 
-.item-block
+.item-block,
+.item-block-small
 {
 	border-radius: 4px;
 	background-color: #000;
 	margin-top: 50px;
 }
+
 
 .item-block img
 {
@@ -320,7 +322,7 @@ ol, ul {
 
 .technical-solution-container
 {
-	background-image: url(https://www-assets.particle.io/images/Particle-Photo-Assets-July-2016-285.jpg?mtime=20161101090013);
+	background-image: url(/home/andrew/code/sites/lynx.team.com/images/Particle-Photo-Assets-July-2016-285.jpg);
 	padding-top: 100px;
     padding-bottom: 200px;
     padding-left: 400px;
@@ -609,6 +611,15 @@ ol, ul {
 	}
 }
 
+@media screen and (min-width: 429px) {
+	.item-block-info-small
+	{
+		display: none;
+	}
+}
+
+
+
 @media screen and (max-width: 786px) {
 	.technical-solution-container
 	{
@@ -629,4 +640,10 @@ ol, ul {
 		padding-right: 30px;
 		padding-left: 30px;
 	}
+}
+
+.item-block-info-small 
+{
+	padding-left: 30px;
+	display: none;
 }
